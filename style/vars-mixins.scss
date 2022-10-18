@@ -1,0 +1,56 @@
+// Add variables and mixins in one file, sorry
+
+$white: #fff;
+$playFair: 'Playfair Display', serif;
+$bgAfter: rgba(0, 0, 0, 0.2);
+$lato: 'Lato', sans-serif;
+$black: #000;
+$openSans: 'Open Sans', sans-serif;
+
+// Mixins
+
+@mixin section {
+    background-size: cover;
+    position: relative;
+    font-family: $playFair;
+}
+
+@mixin sectionAfter {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+@mixin titlePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 13.68rem;
+    position: relative;
+    z-index: 3;
+}
+
+@mixin btn {
+    text-transform: uppercase;
+    font-size: 0.75px;
+    letter-spacing: 0.5px;
+    color: $white;
+    border-radius: 30px;
+    border: 1px solid $white;
+    cursor: pointer;
+    padding: 1.06rem 2.12rem;
+    background: transparent;
+    margin-top: 10.62rem;
+    font-family: $lato;
+}
+
+@mixin btnHover {
+    background-color: $white;
+    color: $black;
+    transition-duration: 0.5s;
+}

@@ -1,3 +1,5 @@
+@import 'vars-mixins';
+
 // General style
 
 *{
@@ -28,19 +30,10 @@ a{
 
 .main{
     background: url(../images/main-bg.png)no-repeat top;
-    background-size: cover;
-    position: relative;
-    font-family: 'Playfair Display', serif;
+    @include section;
 
     &::after{
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.2);
-        z-index: 1;
+        @include sectionAfter;
     }
 
     & .header{
@@ -49,61 +42,274 @@ a{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 104.27px;
+        height: 6.5rem;
 
         & .menu{
             display: flex;
-            margin-bottom: 10px;
+            margin-bottom: 0.625rem;
 
             & li + li{
-                margin-left: 39px;
+                margin-left: 2.43rem;
             }
 
             & a{
-                color: #fff;
-                font-size: 22px;
+                color: $white;
+                font-size: 1.375rem;
             }
         }
     }
 
     & .title-page{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 219px;
-        position: relative;
-        z-index: 3;
+        @include titlePage;
 
         & h1{
-           font-size: 140px;
-           color: #fff; 
+           font-size: 8.75rem;
+           color: $white; 
         }
 
         & p{
-           font-size: 24px;
-           color: #fff; 
+           font-size: 1.5rem;
+           color: $white; 
         }
 
         & button{
-            text-transform: uppercase;
-            font-size: 12px;
-            letter-spacing: 0.5px;
-            color: #fff;
-            border-radius: 30px;
-            border: 1px solid #fff;
-            cursor: pointer;
-            padding: 17px 34px;
-            background: transparent;
-            margin-top: 170px;
-            font-family: 'Lato', sans-serif;
+            @include btn;
 
             &:hover{
-                background-color: #fff;
-                color: black;
-                transition-duration: 0.5s;
+                @include btnHover;
             }
         }
     }
 }
 
 //Second section
+
+.second{
+    background: url(../images/second-bg.png)no-repeat top;
+    @include section;
+
+    &::after{
+        @include sectionAfter;
+    }
+
+    & .title-page{
+        @include titlePage;
+        margin-top: 0;
+        padding-top: 17.06rem;
+
+        & h1{
+            font-size: 8.75rem;
+            color: $white; 
+         }
+ 
+         & p{
+            font-size: 1.5rem;
+            color: $white; 
+         }
+ 
+         & button{
+             @include btn;
+ 
+             &:hover{
+                 @include btnHover;
+             }
+         }
+    }
+}
+
+// Third section
+
+.third{
+    background: url(../images/third-bg.png)no-repeat bottom;
+    @include section;
+
+    &::after{
+        @include sectionAfter;
+    }
+
+    & .title-page{
+        @include titlePage;
+        margin-top: 0;
+        padding-top: 13.25rem;
+
+        & h1{
+            font-size: 8.75rem;
+            color: $white;
+            text-align: center; 
+         }
+ 
+         & p{
+            font-size: 1.5rem;
+            color: $white; 
+         }
+ 
+         & button{
+             @include btn;
+ 
+             &:hover{
+                 @include btnHover;
+             }
+         }
+    }
+}
+
+// Four section
+
+.four{
+    background: url(../images/four-bg.png)no-repeat top;
+    @include section;
+
+    &::after{
+        @include sectionAfter;
+    }
+
+    & .title-page{
+        @include titlePage;
+        margin-top: 0;
+        padding-top: 13.25rem;
+
+        & h1{
+            font-size: 8.75rem;
+            color: $white;
+            text-align: center; 
+         }
+ 
+         & p{
+            font-size: 1.5rem;
+            color: $white; 
+         }
+ 
+         & button{
+             @include btn;
+ 
+             &:hover{
+                 @include btnHover;
+             }
+         }
+    }
+}
+
+// Five section
+
+.five{
+    background: url(../images/five-bg.png)no-repeat top;
+    @include section;
+
+    &::after{
+        @include sectionAfter;
+    }
+
+    & .title-page{
+        @include titlePage;
+        margin-top: 0;
+        padding-top: 13.25rem;
+
+        & h1{
+            font-size: 8.75rem;
+            color: $white;
+            text-align: center; 
+         }
+ 
+         & p{
+            font-size: 1.5rem;
+            color: $white; 
+         }
+ 
+         & button{
+             @include btn;
+ 
+             &:hover{
+                 @include btnHover;
+             }
+         }
+    }
+}
+
+// Six section
+
+.six{
+    background: $black;
+    height: 50vh;
+
+    & .title-page{
+        @include titlePage;
+        margin-top: 0;
+        padding-top: 7.5rem;
+
+        & h1{
+            font-size: 3.12rem;
+            color: $white;
+            text-align: center; 
+         }
+ 
+         & p{
+            font-size: 1.43rem;
+            color: $white; 
+         }
+ 
+         & button{
+             @include btn;
+             margin-top: 3.75rem;
+             background-color: $white;
+             border: 1px solid $black;
+             color: $black;
+ 
+             &:hover{
+                 background-color: transparent;
+                 border: 1px solid $white;
+                 color: $white;
+                 transition-duration: 0.5s;
+             }
+         }
+    }
+}
+
+// Footer
+
+footer{
+    background: $black;
+    padding: 3.12rem 0 3.12rem 0;
+
+    & .footer-main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $white;
+        font-family: $openSans;
+
+        & .made-by{
+            display: flex;
+
+            & p{
+                color: #666;
+                font-size: 0.81rem;
+
+                &:nth-child(2){
+                    color: $white;
+                }
+            }
+
+            & p + p{
+                margin-left: 1.25rem;
+            }
+        }
+
+        .footer_menu{
+            display: flex;
+
+            & a{
+                color: #666;
+                font-size: 0.81rem;
+
+                &:hover{
+                    color: $white;
+                    transition-duration: 0.5s;
+                }
+            }
+
+            & li + li{
+                margin-left: 1.25rem;
+            }
+        }
+    }
+}
