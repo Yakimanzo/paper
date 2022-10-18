@@ -26,6 +26,7 @@ a {
   background: url(../images/main-bg.png) no-repeat top;
   background-size: cover;
   position: relative;
+  font-family: "Playfair Display", serif;
 }
 .main::after {
   content: "";
@@ -55,4 +56,38 @@ a {
 .main .header .menu a {
   color: #fff;
   font-size: 22px;
+}
+.main .title-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 219px;
+  position: relative;
+  z-index: 3;
+}
+.main .title-page h1 {
+  font-size: 140px;
+  color: #fff;
+}
+.main .title-page p {
+  font-size: 24px;
+  color: #fff;
+}
+.main .title-page button {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: #fff;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  padding: 17px 34px;
+  background: transparent;
+  margin-top: 170px;
+  font-family: "Lato", sans-serif;
+}
+.main .title-page button:hover {
+  background-color: #fff;
+  color: black;
+  transition-duration: 0.5s;
 }/*# sourceMappingURL=style.css.map */
