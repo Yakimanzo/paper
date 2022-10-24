@@ -1,3 +1,4 @@
+@import 'breakpoints';
 @import 'vars-mixins';
 
 // General style
@@ -15,7 +16,7 @@
 }
 
 section{
-    height: 100vh;
+    height: auto;
 }
 
 li{
@@ -249,7 +250,7 @@ a{
  
          & button{
              @include btn;
-             margin-top: 3.75rem;
+             margin: 3.75rem 0 5rem 0;
              background-color: $white;
              border: 1px solid $black;
              color: $black;
@@ -312,4 +313,123 @@ footer{
             }
         }
     }
+}
+
+
+// Media for laptop
+
+@include laptop{
+    .main-container{
+        width: 95%;
+    }
+
+    .menu a{
+        font-size: 1.3rem!important;
+    }
+        
+    h1{
+        font-size: 5rem!important;
+        text-align: center;
+    }
+
+    button{
+        margin-top: 8rem!important;
+    }
+
+    .six{
+
+        & h1{
+            font-size: 3.12rem!important;
+        }
+    }
+}
+
+@include tablet{
+    .footer-main{
+        flex-direction: column-reverse;
+
+        & .made-by{
+            margin-top: 1.5rem;
+
+            & p + p{
+                margin-left: 5rem!important;
+            }
+        }
+    }
+}
+
+@include mobile{
+
+    .header{
+        flex-direction: column;
+        padding-top: 2rem;
+
+        & .menu{
+            margin-top: 1rem;
+
+            & a{
+                font-size: 1.2rem!important;
+            }
+
+            & li + li{
+                margin-left: 4rem;
+            }
+        }
+    }
+
+        
+    h1{
+        font-size: 3rem!important;
+        text-align: center;
+    }
+
+    button{
+        margin-top: 8rem!important;
+    }
+
+    .six{
+
+        & h1{
+            font-size: 3.12rem!important;
+        }
+
+        & button{
+            margin: 3.75rem 0 5rem 0!important;
+        }
+    }
+
+    .made-by{
+
+        & p{
+            font-size: 0.7rem!important;
+        }
+    }
+
+    .six{
+
+        & h1{
+            font-size: 2.8rem!important;
+        }
+    }
+
+    .footer_menu{
+
+        & a{
+            font-size: 0.7rem!important;
+        }
+    }
+}
+
+@include mobileSmall{
+    .six{
+
+        & h1{
+            font-size: 2.5rem!important;
+        }
+
+        & button{
+            margin: 3.75rem 0 8rem 0!important;
+        }
+    }
+
 }

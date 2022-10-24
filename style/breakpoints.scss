@@ -1,0 +1,32 @@
+
+// Media breakpoints
+
+$xs: 375px;
+$sm: 580px;
+$md: 810px;
+$lg: 1199px;
+
+
+@mixin laptop {
+    @media (max-width: $lg) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: $md) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: $sm) {
+        @content;
+    }
+}
+
+@mixin mobileSmall {
+    @media (max-width: $xs) {
+        @content;
+    }
+}

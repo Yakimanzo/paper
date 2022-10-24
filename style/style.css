@@ -11,7 +11,7 @@
 }
 
 section {
-  height: 100vh;
+  height: auto;
 }
 
 li {
@@ -61,7 +61,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 219px;
+  margin-top: 13.68rem;
   position: relative;
   z-index: 3;
 }
@@ -75,15 +75,15 @@ a {
 }
 .main .title-page button {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 0.75px;
   letter-spacing: 0.5px;
   color: #fff;
   border-radius: 30px;
   border: 1px solid #fff;
   cursor: pointer;
-  padding: 17px 34px;
+  padding: 1.06rem 2.12rem;
   background: transparent;
-  margin-top: 170px;
+  margin: 10.62rem 0 5rem 0;
   font-family: "Lato", sans-serif;
 }
 .main .title-page button:hover {
@@ -112,7 +112,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 219px;
+  margin-top: 13.68rem;
   position: relative;
   z-index: 3;
   margin-top: 0;
@@ -128,15 +128,15 @@ a {
 }
 .second .title-page button {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 0.75px;
   letter-spacing: 0.5px;
   color: #fff;
   border-radius: 30px;
   border: 1px solid #fff;
   cursor: pointer;
-  padding: 17px 34px;
+  padding: 1.06rem 2.12rem;
   background: transparent;
-  margin-top: 170px;
+  margin: 10.62rem 0 5rem 0;
   font-family: "Lato", sans-serif;
 }
 .second .title-page button:hover {
@@ -165,7 +165,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 219px;
+  margin-top: 13.68rem;
   position: relative;
   z-index: 3;
   margin-top: 0;
@@ -182,15 +182,15 @@ a {
 }
 .third .title-page button {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 0.75px;
   letter-spacing: 0.5px;
   color: #fff;
   border-radius: 30px;
   border: 1px solid #fff;
   cursor: pointer;
-  padding: 17px 34px;
+  padding: 1.06rem 2.12rem;
   background: transparent;
-  margin-top: 170px;
+  margin: 10.62rem 0 5rem 0;
   font-family: "Lato", sans-serif;
 }
 .third .title-page button:hover {
@@ -219,7 +219,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 219px;
+  margin-top: 13.68rem;
   position: relative;
   z-index: 3;
   margin-top: 0;
@@ -236,15 +236,15 @@ a {
 }
 .four .title-page button {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 0.75px;
   letter-spacing: 0.5px;
   color: #fff;
   border-radius: 30px;
   border: 1px solid #fff;
   cursor: pointer;
-  padding: 17px 34px;
+  padding: 1.06rem 2.12rem;
   background: transparent;
-  margin-top: 170px;
+  margin: 10.62rem 0 5rem 0;
   font-family: "Lato", sans-serif;
 }
 .four .title-page button:hover {
@@ -273,7 +273,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 219px;
+  margin-top: 13.68rem;
   position: relative;
   z-index: 3;
   margin-top: 0;
@@ -290,15 +290,15 @@ a {
 }
 .five .title-page button {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 0.75px;
   letter-spacing: 0.5px;
   color: #fff;
   border-radius: 30px;
   border: 1px solid #fff;
   cursor: pointer;
-  padding: 17px 34px;
+  padding: 1.06rem 2.12rem;
   background: transparent;
-  margin-top: 170px;
+  margin: 10.62rem 0 5rem 0;
   font-family: "Lato", sans-serif;
 }
 .five .title-page button:hover {
@@ -315,7 +315,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 219px;
+  margin-top: 13.68rem;
   position: relative;
   z-index: 3;
   margin-top: 0;
@@ -332,17 +332,17 @@ a {
 }
 .six .title-page button {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 0.75px;
   letter-spacing: 0.5px;
   color: #fff;
   border-radius: 30px;
   border: 1px solid #fff;
   cursor: pointer;
-  padding: 17px 34px;
+  padding: 1.06rem 2.12rem;
   background: transparent;
-  margin-top: 170px;
+  margin: 10.62rem 0 5rem 0;
   font-family: "Lato", sans-serif;
-  margin-top: 3.75rem;
+  margin: 3.75rem 0 5rem 0;
   background-color: #fff;
   border: 1px solid #000;
   color: #000;
@@ -391,4 +391,79 @@ footer .footer-main .footer_menu a:hover {
 }
 footer .footer-main .footer_menu li + li {
   margin-left: 1.25rem;
+}
+
+@media (max-width: 1199px) {
+  .main-container {
+    width: 95%;
+  }
+  .menu a {
+    font-size: 1.3rem !important;
+  }
+  h1 {
+    font-size: 5rem !important;
+    text-align: center;
+  }
+  button {
+    margin-top: 8rem !important;
+  }
+  .six h1 {
+    font-size: 3.12rem !important;
+  }
+}
+@media (max-width: 810px) {
+  .footer-main {
+    flex-direction: column-reverse;
+  }
+  .footer-main .made-by {
+    margin-top: 1.5rem;
+  }
+  .footer-main .made-by p + p {
+    margin-left: 5rem !important;
+  }
+}
+@media (max-width: 580px) {
+  .header {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+  .header .menu {
+    margin-top: 1rem;
+  }
+  .header .menu a {
+    font-size: 1.2rem !important;
+  }
+  .header .menu li + li {
+    margin-left: 4rem;
+  }
+  h1 {
+    font-size: 3rem !important;
+    text-align: center;
+  }
+  button {
+    margin-top: 8rem !important;
+  }
+  .six h1 {
+    font-size: 3.12rem !important;
+  }
+  .six button {
+    margin: 3.75rem 0 5rem 0 !important;
+  }
+  .made-by p {
+    font-size: 0.7rem !important;
+  }
+  .six h1 {
+    font-size: 2.8rem !important;
+  }
+  .footer_menu a {
+    font-size: 0.7rem !important;
+  }
+}
+@media (max-width: 375px) {
+  .six h1 {
+    font-size: 2.5rem !important;
+  }
+  .six button {
+    margin: 3.75rem 0 8rem 0 !important;
+  }
 }/*# sourceMappingURL=style.css.map */
